@@ -1,16 +1,49 @@
 // bower:scss
 // endbower
 
+*, *:before, *:after {
+  -moz-box-sizing: border-box; 
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+ }
+
 $bg: #424242;
 $color: #ede82c;
 
+@font-face {
+    font-family: "Din Black";
+    src: url(din_black.ttf) format("truetype");
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+}
+
 body {
   background: $bg;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Din Black", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
   text-align: center;
   padding: 60px;
 }
+
+img {
+  @media screen and (max-width: 768px) {
+    width: 80%;
+  }
+  @media screen and (max-height: 600px) {
+    height: 80%;
+  }
+}
+
+p {
+  text-transform: uppercase;
+  color: $color;
+  letter-spacing: 1px;
+}
+
+
 
 .browsehappy {
   margin: 0.2em 0;

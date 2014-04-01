@@ -1,1 +1,1 @@
-console.log('\'Allo \'Allo!');
+console.log('Jornadas de Electrotecnia FEUP');
