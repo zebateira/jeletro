@@ -1,12 +1,6 @@
 // Generated on 2014-04-01 using generator-webapp 0.4.8
 'use strict';
 
-// # Globbing
-// for performance reasons we're only matching one level down:
-// 'test/spec/{,*/}*.js'
-// use this if you want to recursively match all subfolders:
-// 'test/spec/**/*.js'
-
 module.exports = function(grunt) {
 
   // Load grunt tasks automatically
@@ -78,16 +72,6 @@ module.exports = function(grunt) {
           open: true,
           base: [
             '.tmp',
-            '<%= config.app %>'
-          ]
-        }
-      },
-      test: {
-        options: {
-          port: 9001,
-          base: [
-            '.tmp',
-            'test',
             '<%= config.app %>'
           ]
         }
@@ -216,7 +200,9 @@ module.exports = function(grunt) {
         assetsDirs: ['<%= config.dist %>', '<%= config.dist %>/images', '<%= config.dist %>/styles/fonts'],
         patterns: {
           css: [
-            [/(din_black\.ttf)/, 'Replacing reference to din_black.ttf']
+            [/(\w*\.ttf)/, 'Replacing reference to ttf fonts'],
+            [/(\w*\.png)/, 'Replacing reference to png images'],
+            [/(\w*\.svg)/, 'Replacing reference to svg images']
           ]
         }
       },
