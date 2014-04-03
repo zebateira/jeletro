@@ -19,10 +19,6 @@ body, html {
   src: url(fonts/din_black.ttf) format("truetype");
 }
 
-* {
-  font-family: "Din Black", "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -36,11 +32,17 @@ $bg: #323333;
 $bg-darker: #2c2b2c;
 $color: #ede82c;
 
+* {
+  font-family: "Din Black", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: $color;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+
 
 body {
   background: $bg;
-  color: #333;
-  text-align: center;
 }
 
 div {
@@ -48,3 +50,4 @@ div {
 }
 
 @import "banner";
+@import "content";
