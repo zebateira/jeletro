@@ -202,7 +202,9 @@ module.exports = function(grunt) {
           css: [
             [/(\w*\.ttf)/, 'Replacing reference to ttf fonts'],
             [/(\w*\.png)/, 'Replacing reference to png images'],
-            [/(\w*\.svg)/, 'Replacing reference to svg images']
+            [/(\w*\.svg)/, 'Replacing reference to svg images'],
+            [/(tri\.svg)/, 'Replacing reference to tri image'],
+            [/(logo\.svg)/, 'Replacing reference to logo image']
           ]
         }
       },
