@@ -1,0 +1,67 @@
+.banner-top {
+  height: 30px;
+
+  background-image: url(../images/tri2.svg);
+  background-repeat: repeat-x;
+
+}
+
+.top-filler {
+  height: 40px;
+  overflow: visible;
+  background-color: $bg-darker;
+}
+
+.banner-bottom {
+  height: 30px;
+
+  background-image: url(../images/tri.svg);
+  background-repeat: repeat-x;
+}
+
+
+
+.triangle {
+  display: inline-block;
+
+  width: 0;
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+
+  border-top: 22px solid $bg-darker;
+}
+
+.banner {
+  position: relative;
+  height: 60%;
+  width: 100%;
+  padding: 30px 0;
+  text-align: center;
+
+  @media screen and (max-height: 600px)  {
+    padding: 15px 0;
+    height: 30%;
+  }
+
+  .banner-img {
+    max-width: 95% !important;
+    height: 95%;
+    display: block;
+    margin: 0 auto;
+    background: no-repeat center;
+    background-size: contain;
+    
+    background-image: url(../images/logo.svg);
+    
+    @media screen and (max-height: 600px) {
+      background-image: url(../images/logo2.svg);
+    }
+  }
+
+  p {
+    text-transform: uppercase;
+    color: $color;
+    letter-spacing: 1px;
+  }
+}
