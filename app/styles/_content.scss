@@ -1,14 +1,24 @@
-.schedule {
-  padding: 0 50px;
+.content {
+  padding: 10px 50px;
+  background-color: $bg-darker;
+
+  &.first {
+    padding: 50px 0 10px 0;
+
+    .content-title {
+      border-left: none;
+      border-right: none;
+      display: block;
+    }
+  }
 }
 
-.schedule-title {
+.content-title {
   padding: 10px 15px;
   text-align: center;
+  line-height: 1.6em;
 
   border: 3px solid $color;
-  // border-left: none;
-  // border-right: none;
 
   font-size: 1.6em;
 
@@ -18,8 +28,6 @@
 
   &:hover {
     background-color: lighten($bg, 5%);
-    cursor: pointer;
-    cursor: hand;
   }
 }
 
@@ -27,4 +35,27 @@
   border-bottom: 3px solid $color;
   padding-bottom: 2px;
   margin: 15px 0;
+}
+
+.entry-content {
+  color: white;
+  text-transform: none;
+
+  .desc {
+    margin-left: 26px;
+  }
+
+  & * {
+    color: white;
+    text-transform: none;
+    line-height: 1.2em;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+}
+
+.last {
+  padding-bottom: 50px;
 }

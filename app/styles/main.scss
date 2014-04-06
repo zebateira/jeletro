@@ -12,7 +12,9 @@ body, html {
   height: 100%;
 }
 
-
+a {
+  text-decoration: none;
+}
 
 @font-face {
   font-family: "Din Black";
@@ -51,3 +53,4 @@ div {
 
 @import "banner";
 @import "content";
+@import "footer";
