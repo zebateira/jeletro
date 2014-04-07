@@ -32,7 +32,7 @@ a {
 
 $bg: #323333;
 $bg-darker: #2c2b2c;
-$color: #ede82c;
+$color: #fcb514;
 
 * {
   font-family: "Din Black", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -42,13 +42,23 @@ $color: #ede82c;
   font-weight: lighter;
 }
 
-
 body {
   background: $bg;
 }
 
 div {
   overflow: auto;
+}
+
+.c50 {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+.c25 {
+  float: left;
+  width: 25%;
+  padding: 10px;
 }
 
 @import "banner";
