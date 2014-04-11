@@ -196,20 +196,11 @@ module.exports = function(grunt) {
 
     // Performs rewrites based on rev and the useminPrepare configuration
     usemin: {
-      options: {
-        assetsDirs: ['<%= config.dist %>', '<%= config.dist %>/images', '<%= config.dist %>/styles/fonts'],
-        patterns: {
-          css: [
-            [/(\w*\.ttf)/, 'Replacing reference to ttf fonts'],
-            [/(\w*\.png)/, 'Replacing reference to png images'],
-            [/(\w*\.svg)/, 'Replacing reference to svg images'],
-            [/(tri\.svg)/, 'Replacing reference to tri image'],
-            [/(logo\.svg)/, 'Replacing reference to logo image']
-          ]
-        }
-      },
       html: ['<%= config.dist %>/{,*/}*.html'],
-      css: ['<%= config.dist %>/styles/{,*/}*.css']
+      css: ['<%= config.dist %>/styles/{,*/}*.css'],
+      options: {
+        assetsDirs: ['<%= config.dist %>', '<%= config.dist %>/images', '<%= config.dist %>/styles/fonts']
+      },
     },
 
     // The following *-min tasks produce minified files in the dist folder
