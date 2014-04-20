@@ -1,6 +1,10 @@
 .content {
-  padding: 50px 50px;
+  padding: 50px;
   background-color: $bg-darker;
+
+  @media screen and (max-width: 320px) {
+    padding: 15px;
+  }
 }
 
 .content-title {
@@ -13,10 +17,15 @@
 
   display: table;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 
   &:hover {
     background-color: lighten($bg, 5%);
+  }
+
+  @media screen and (max-width: 320px) {
+    font-size: 1.2em;
+    line-height: 1.2em;
   }
 }
 
@@ -57,4 +66,16 @@
   height: 1em;
   width: 1em;
   padding-right: 5px;
+}
+
+.register {
+  &:hover {
+    cursor: pointer;
+    cursor: hand;
+  }
+}
+
+.fb-ref {
+  display: table;
+  margin: 0 auto;
 }
