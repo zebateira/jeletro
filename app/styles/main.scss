@@ -63,14 +63,19 @@ div {
   width: 33%;
   padding: 50px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 800px) {
     padding: 25px;
   }
   @media screen and (max-width: 600px) {
     padding: 15px;
   }
+  @media screen and (max-width: 480px) {
+    padding: 30px;
+    width: 100%;
+  }
   @media screen and (max-width: 320px) {
-    padding: 5px;
+    padding: 10px;
+    width: 100%;
   }
 }
 

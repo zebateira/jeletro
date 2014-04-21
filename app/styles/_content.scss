@@ -23,14 +23,32 @@
     background-color: lighten($bg, 5%);
   }
 
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 600px) {
+    font-size: 1.4em;
+    line-height: 1.4em;
+  }
+  @media screen and (max-width: 480px) {
     font-size: 1.2em;
     line-height: 1.2em;
+  }
+  @media screen and (max-width: 320px) {
+    font-size: 1em;
+    line-height: 1em;
   }
 }
 
 .entry {
   margin-bottom: 20px;
+
+  @media screen and (max-width: 600px) {
+    font-size: 0.9em;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 0.8em;
+  }
+  @media screen and (max-width: 320px) {
+    font-size: 0.6em;
+  }
 }
 
 .entry-title {
