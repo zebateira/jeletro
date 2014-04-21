@@ -39,7 +39,7 @@
 
   @media screen and (max-height: 600px)  {
     padding: 15px 0;
-    height: 30%;
+    height: 50%;
   }
 
   .banner-img {
@@ -52,7 +52,7 @@
     
     background-image: url(../images/logo.svg);
     
-    @media screen and (max-height: 600px) {
+    @media screen and (orientation: landscape) {
       background-image: url(../images/logo2.svg);
     }
   }
